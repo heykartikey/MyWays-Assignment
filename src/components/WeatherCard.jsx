@@ -23,7 +23,7 @@ const WeatherCard = ({
         Weather Today in <span className="font-semibold">{title}</span>
       </h1>
       <div className="py-8 flex gap-1 flex-col sm:justify-between sm:flex-row items-center">
-        <WeatherCondition condition={condition} />
+        <WeatherCondition condition={condition} temp_unit={units.temperature} />
         <TempDetails temp={temp} />
       </div>
       <div className="flex flex-col">
